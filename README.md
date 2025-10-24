@@ -1,3 +1,6 @@
+> **Download the latest PDF:** [Get it on the Releases page](../../releases/latest)
+
+
 # aurora-constitution
 Aurora Dual Lane Constitution
 
