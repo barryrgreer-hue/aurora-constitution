@@ -199,3 +199,9 @@ We’re not telling you to think smaller—we’re making it safe to think bigge
 “Measure risk, measure benefit. If you can’t do either properly, don’t proceed.”
 
 Call to action: Try bold ideas in SYNTHESIS (sandbox). When they’re ready for people and the real world, switch to SAFETY, prove it, and proceed.
+
+If it still doesn’t render bold, double-check that each header line starts with ## and there’s a blank line before and after the header.
+
+“Measure risk, measure benefit. If you can’t do either properly, don’t proceed.”
+
+Call to action: Try bold ideas in SYNTHESIS (sandbox). When they’re ready for people and the real world, switch to SAFETY, prove it, and proceed.
