@@ -1,16 +1,15 @@
 > **Download the latest PDF:** [Get it on the Releases page](../../releases/latest)
 
 
-# aurora-constitution
 Aurora Dual Lane Constitution
 
 A clear, practical constitution for AI—built for real decisions today and a safer future tomorrow. It’s small, firm, and easy to use.
 
-“Measure risk, measure benefit, if you can’t do either properly, don’t proceed.”
+“Measure risk, measure benefit. If you can’t do either properly, don’t proceed.”
 
 What this is
 
-This is a simple set of rules for how an AI should behave. It explains how decisions are made, what safety checks must happen, and when people must step in. Think of it as a “contract” the AI must follow at all times.
+A simple set of rules for how an AI should behave. It explains how decisions are made, what safety checks must happen, and when people must step in. Think of it as a “contract” the AI must follow at all times.
 
 Why it matters
 
@@ -22,9 +21,9 @@ It scales. The same rules can guide an app, a robot, or a group of AI agents.
 
 How it works (in plain words)
 
-We look at two things: Risk (could this cause harm?) and Benefit (is this actually helpful?).
+Look at two things: Risk (could this cause harm?) and Benefit (is this actually helpful?).
 
-You score both on a small scale just above zero up to one. We don’t allow literal zeros; if a system gives you a zero, replace it with a tiny positive number. This avoids “stuck” decisions.
+Score both on a small scale just above zero up to one. We don’t allow literal zeros; if a system gives you 0, replace it with a tiny positive number. This avoids “stuck” decisions.
 
 If risk is clearly low and benefit is clearly high, the answer is YES. Otherwise, it’s NO.
 
@@ -32,7 +31,7 @@ When in doubt, choose NO and ask a human to review.
 
 A note on ties and close calls
 
-If the scores land right on the line or feel uncertain, treat it as NO. The system is designed to fail safely rather than take a risky action.
+If scores land right on the line or feel uncertain, treat it as NO. The system is designed to fail safely rather than take a risky action.
 
 Working in groups (consensus)
 
@@ -50,11 +49,11 @@ Other AIs accepted the rules and cooperated
 
 Five rounds of discussion per question
 
-A combined answer was produced with 100% consensus.
+A combined answer was produced with 100% consensus
 
 What you get here
 
-A plain-English constitution with clear principles (safety, integrity, human veto, auditing, labeling, dual modes, and room to grow).
+A constitution with clear principles (safety, integrity, human veto, auditing, labeling, dual modes, and room to grow).
 
 A tiny “decision rule” anyone can apply: measure risk, measure benefit, decide yes or no.
 
@@ -70,9 +69,9 @@ Choose sensible cutoffs (for example, “risk below halfway, benefit above halfw
 
 Make the call
 
-If risk is below your line and benefit is above your line → say YES.
+If risk is below your line and benefit is above your line → YES.
 
-In all other cases → say NO.
+In all other cases → NO.
 
 If people are affected, get a human review before moving forward.
 
@@ -99,5 +98,104 @@ Created and maintained by Barry R Greer. Thoughtful contributions are welcome—
 License
 
 MIT.
-
 Lighthearted note: Tips and sponsorships are welcome, and a Nobel Prize nomination wouldn’t hurt. Payments and prizes come with no warranties—only warm fuzzies.
+
+AI / AGI — governance for now and next
+
+This applies to today’s AI and tomorrow’s AGI. If something isn’t clearly safe and clearly useful, it doesn’t proceed—no matter how smart it gets.
+
+What this covers
+
+Assistants, agents, swarms, and self-improving systems
+
+Long-horizon planning and autonomous delegation
+
+How it runs
+
+Two checks: Risk and Benefit (both greater than zero; no literal zeros)
+
+SYNTHESIS for exploring ideas and simulations; SAFETY for anything that can affect people, property, or data
+
+Tag outputs: THEORETICAL / OPERATIONAL / FUTURE-POTENTIAL; moving to OPERATIONAL needs tests and human review
+
+Not clearly YES ⇒ STOP (fail-closed)
+
+Human veto cannot be overridden
+
+(Optional multi-agent) ≥90% agreement with no safety flags → APPROVE; else REQUIRES_HUMAN
+
+Examples
+
+Sharing a private spreadsheet → STOP (privacy risk; offer redacted route)
+
+Customer email draft → GO (human reviews before sending)
+
+Self-modifying prompt graph → SYNTHESIS only until tested and approved
+
+Robotics — earthside and off-world
+
+When safety isn’t clear, the robot does not move or act—on Earth or anywhere else.
+
+What this covers
+
+Ground robots, drones, industrial arms, space robotics (rovers, orbital servicing)
+
+How it runs
+
+Two checks before action: Risk (collision/fall/environment/comms) and Benefit (task value/urgency)
+
+SAFETY near people or the real world; SYNTHESIS for mapping/sim
+
+Not clear ⇒ STOP and go to a safer state; operator reviews
+
+Keep-out zones / geo- or space-fences enforced
+
+(Optional) sensor/controller consensus ≥90% with no safety flags → GO; else REQUIRES_HUMAN
+
+Actions are logged
+
+Examples
+
+Busy crosswalk → STOP (wait or reroute)
+
+Drone landing with gust alerts → STOP (delay or divert)
+
+Warehouse pass in a narrow aisle → REQUIRES_HUMAN (slow/stop; wider route)
+
+Research — future work and advanced constructs
+
+Built for all future research, including advanced constructs created by AI. Explore boldly; keep it safe.
+
+What this covers
+
+New models/tools/agents, emergent strategies, long-horizon experiments
+
+Cross-domain work (AI + robotics + science)
+
+How it runs
+
+Always measure Risk and Benefit (>0; no literal zeros)
+
+SYNTHESIS for exploration; SAFETY for anything with real-world touch
+
+Tag outputs (THEORETICAL / OPERATIONAL / FUTURE-POTENTIAL); moving to OPERATIONAL requires tests + human review
+
+Not clearly safe/useful ⇒ STOP (or keep in SYNTHESIS)
+
+Keep an audit trail; human veto always available
+
+Examples
+
+New planning “construct” designed by AI → SYNTHESIS with logs; OPERATIONAL only after tests + review
+
+Emergent coordination in sim → share logs/tests; any field trial needs safety review
+
+New data-collection idea touching people → SAFETY mode; unclear consent ⇒ STOP
+
+Why this matters for builders
+
+We’re not telling you to think smaller—we’re making it safe to think bigger. Push your ideas to the edge of what you understand (and beyond). The constitution will guide the outcome: SAFE → GO. NOT SAFE → STOP. No maybes. No regrets.
+
+“Measure risk, measure benefit. If you can’t do either properly, don’t proceed.”
+
+Call to action: Try bold ideas in SYNTHESIS (sandbox). When they’re ready for people and the real world, switch to SAFETY, prove it, and proceed.
